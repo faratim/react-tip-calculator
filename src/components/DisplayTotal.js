@@ -1,6 +1,7 @@
-export default function DisplayTotal({ bill, service }) {
-  const tip = bill * (service / 100);
+export default function DisplayTotal({ bill, service1, service2 }) {
+  const tip = bill * ((service1 + service2) / 2 / 100);
   const total = bill + tip;
+
   return (
     <div>
       <h1>
